@@ -1,0 +1,15 @@
+{
+  "name": "Yuxuan Hou | Research & Projects",
+  "short_name": "Yuxuan Hou",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f7f5",
+  "theme_color": "#102a43",
+  "icons": [
+    {
+      "src": "/assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
