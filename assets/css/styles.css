@@ -1919,3 +1919,21 @@ html[data-theme="dark"] .section-dark {
     transform: none;
   }
 }
+
+/* Publication and updated profile content */
+.publication-card {
+  margin-bottom: 32px;
+  padding: clamp(24px, 4vw, 40px);
+  border: 1px solid var(--accent);
+  border-radius: 20px;
+  background: var(--accent-soft);
+}
+.publication-card h3 { margin: 14px 0; font-size: clamp(20px, 2.4vw, 28px); line-height: 1.35; }
+.publication-card > p { margin-top: 14px; }
+.publication-links { display: flex; flex-wrap: wrap; gap: 14px 28px; margin-top: 22px; }
+.publication-links a { overflow-wrap: anywhere; }
+.publication-followup { color: var(--muted); font-size: 13px; }
+.badge { padding-top: 4px; padding-bottom: 4px; }
+.leadership-panel ul { grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); }
+.leadership-panel .panel-copy { font-size: 13px; line-height: 1.8; }
+@media (max-width: 560px) { .leadership-panel ul { grid-template-columns: 1fr; } }
