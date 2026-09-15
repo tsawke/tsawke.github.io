@@ -1937,3 +1937,5 @@ html[data-theme="dark"] .section-dark {
 .leadership-panel ul { grid-template-columns: repeat(auto-fit, minmax(165px, 1fr)); }
 .leadership-panel .panel-copy { font-size: 13px; line-height: 1.8; }
 @media (max-width: 560px) { .leadership-panel ul { grid-template-columns: 1fr; } }
+
+.additional-research { margin-top: 32px; }

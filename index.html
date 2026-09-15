@@ -115,7 +115,7 @@
         <div><strong>3.86<span>/4.00</span></strong><small>academic-year GPA</small></div>
         <div><strong>2</strong><small>funded programs led</small></div>
         <div><strong>1</strong><small>accepted first-author paper</small></div>
-        <div><strong>4</strong><small>featured research &amp; project tracks</small></div>
+        <div><strong>6</strong><small>research tracks</small></div>
       </div>
     </section>
 
@@ -191,19 +191,37 @@
           </div>
           <div class="research-row-copy">
             <div class="badge-row">
-              <span class="badge">Research reproduction</span>
+              <span class="badge">Acoustic modeling &amp; simulation</span>
               <span class="badge">May 2026 — Present</span>
             </div>
             <h3>3DGS-Acoustic</h3>
-            <p class="project-subtitle">Acoustic rendering and 3D Gaussian Splatting evaluation</p>
-            <p>Reproduced DiffRIR on the <em>classroomBase</em> scene and integrated it into a unified local RIR evaluation framework covering amplitude, phase, room-acoustic, envelope, multi-STFT, and frequency-domain metrics.</p>
+            <p class="project-subtitle">Transferable acoustic object responses for scene editing</p>
+            <p>Building on DiffRIR reproduction and room impulse response evaluation, I develop compact object-response transfer for acoustic scene editing. Current work includes physical simulation, comparisons against state-conditioned and two-stage models, and measurement-cost evaluation across repeated edits.</p>
             <div class="fact-grid">
-              <p><span>Data split</span><strong>12 / 155 / 463</strong> train / eval / test samples</p>
-              <p><span>Key diagnosis</span><strong>MeshRIR compatibility limits</strong> without room geometry and reflection paths</p>
+              <p><span>Repeated-edit comparison</span><strong>26.67% fewer measurement records</strong> over four edits versus the specified recalibration baseline, with lower mean change error in that simulation setting.</p>
+              <p><span>Research status</span><strong>Manuscript in preparation</strong> Ongoing acoustic modeling and validation.</p>
             </div>
             <div class="tag-list"><span>PyTorch</span><span>RIR</span><span>DiffRIR</span><span>3DGS</span><span>Multi-STFT</span></div>
           </div>
         </article>
+        <div class="project-grid additional-research">
+          <article class="project-card" data-reveal><div class="project-card-body">
+            <div class="badge-row"><span class="badge">Ongoing</span><span class="badge">Manuscript in preparation</span></div>
+            <h3>Neuromorphic Sensing</h3><p class="project-subtitle">Event encoding for wireless signals</p><p>Developing spiking neural network (SNN) encoders, including frequency-budgeted events, membrane-state feedback, and Haar-based gated encoding. Comparisons span nine datasets, with component ablations and protocol-specific accuracy and computation analysis.</p>
+          </div></article>
+          <article class="project-card" data-reveal><div class="project-card-body">
+            <div class="badge-row"><span class="badge">Ongoing</span><span class="badge">Manuscript in preparation</span></div>
+            <h3>ReActLens</h3><p class="project-subtitle">State-aware tool-result delivery</p><p>Prototyping tool-result delivery coordinated with cache residency and inference scheduling for resource-constrained language-model agents. Evaluation uses public tool-use traces and a real inference engine, including a controlled study with 112 runs and 1,792 request instances.</p>
+          </div></article>
+          <article class="project-card" data-reveal><div class="project-card-body">
+            <div class="badge-row"><span class="badge">Ongoing</span><span class="badge">Manuscript in preparation</span></div>
+            <h3>InterveneCompose</h3><p class="project-subtitle">Structural property testing</p><p>Investigating query complexity for structural properties of multi-label functions, with lower-bound constructions and an exact test under a second-order structural assumption. Proofs are supported by exact-arithmetic verification on 180 instances.</p>
+          </div></article>
+          <article class="project-card" data-reveal><div class="project-card-body">
+            <div class="badge-row"><span class="badge">Ongoing</span><span class="badge">Manuscript in preparation</span></div>
+            <h3>Q-CalTrack</h3><p class="project-subtitle">Phase-based motion recovery</p><p>Developing phase-based trajectory recovery with sparse anchors and diagnosing frequency-axis and motion-removal errors. Current analysis examines residual blind spots, phase ambiguity, and conditional trajectory uncertainty on existing recordings.</p>
+          </div></article>
+        </div>
       </div>
     </section>
 
