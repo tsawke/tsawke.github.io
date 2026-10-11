@@ -4,6 +4,8 @@ Thumbs.db
 node_modules/
 dist/
 _site/
+work/
+.impeccable/
 .idea/
 .vscode/
 .edge-*/
