@@ -128,7 +128,6 @@
             <a class="text-link" href="https://doi.org/10.1145/3798063.3841767" target="_blank" rel="noopener">DOI: 10.1145/3798063.3841767 ↗</a>
             <a class="text-link" href="https://arxiv.org/abs/2608.16678" target="_blank" rel="noopener">Preprint · arXiv:2608.16678 ↗</a>
           </div>
-          <p class="publication-followup">First author. Full-length follow-up research is ongoing; other manuscripts remain in preparation.</p>
         </article>
 
         <article class="featured-research">
@@ -142,18 +141,20 @@
               <span class="badge">Workshop paper &amp; ongoing research</span>
             </div>
             <p class="project-date">Sep 2025 — Present</p>
-            <h3>Oto-Meal</h3>
+            <h3>Oto-Meal: Earable Sensing with PPG and IMU for Personalized Meal Awareness</h3>
             <p class="project-subtitle">Personalized meal awareness without audio or images</p>
             <p>I lead an earable sensing project using photoplethysmography (PPG) and an inertial measurement unit (IMU) to recognize chewing, drinking, coughing, swallowing, talking, and rest. I developed signal-processing and evaluation pipelines, a two-stage neural recognizer, and a lightweight memory matcher evaluated separately for within-user personalization.</p>
 
             <div class="role-line"><span>Role</span><strong>Project Lead &amp; Primary Developer</strong></div>
+              <p>First-author paper accepted to <strong>WellComp 2026 (UbiComp/ISWC 2026 Workshop)</strong>.</p>
 
             <div class="research-metrics" aria-label="Oto-Meal evaluation highlights">
               <div><strong>70.99%</strong><span>pooled event accuracy</span></div>
               <div><strong>80.38 ± 0.84%</strong><span>memory matching · 20% calibration</span></div>
               <div><strong>85.13 ± 0.57%</strong><span>memory matching · 60% calibration</span></div>
             </div>
-            <p class="metric-context">Workshop study: window-level event accuracy on a seven-user dataset. Pooled neural recognition and within-user memory matching are evaluated under separate mixed-user and within-user protocols.</p>
+              <p class="metric-context">Workshop study: window-level event accuracy on a seven-user dataset. Pooled neural recognition and within-user memory matching are evaluated under separate mixed-user and within-user protocols.</p>
+              <p>Follow-up research explores data-efficient recognition and transfer learning, including a completed 32-case pilot on cross-user evaluation.</p>
 
             <ul class="clean-list">
               <li><strong>7 users</strong>, 538 raw recordings, and 7,028 generated windows.</li>
@@ -177,7 +178,7 @@
             </div>
             <h3>3D Acoustic Field Reconstruction and Adaptive Acoustic Modeling</h3>
             <p class="project-subtitle">3DGS-Acoustic · From acoustic measurements to room geometry</p>
-            <p>I study sparse acoustic reconstruction from room impulse responses (RIRs), including propagation-based receiver calibration and response prediction at unmeasured locations. Building on DiffRIR reproduction and unified evaluation, my current exploration focuses on room geometry inference (RGI) from multiple acoustic measurements.</p>
+            <p>I study acoustic scene reconstruction and measurement-geometry calibration from sparse acoustic observations. My work includes prior-method reproduction, simulation-based evaluation, and early exploration of room-geometry inference.</p>
             <div class="fact-grid">
               <p><span>Completed foundation</span><strong>Acoustic modeling &amp; evaluation</strong> DiffRIR reproduction, physical simulation, and receiver-calibration experiments.</p>
               <p><span>Current direction</span><strong>RIR-based room geometry</strong> Literature review and early exploration of geometry inference from acoustic measurements.</p>
@@ -189,15 +190,15 @@
         <div class="project-grid additional-research">
           <article class="project-card"><div class="project-card-body">
             <div class="badge-row"><span class="badge">Ongoing</span><span class="badge">Manuscript in preparation</span></div>
-            <h3>Neuromorphic Sensing</h3>
-            <p class="project-subtitle">Event encoding and inference on edge devices</p>
-            <p>I develop event encoders for spiking neural networks (SNNs), studying learned subband allocation and reproducible comparisons across wearable and Wi-Fi activity-recognition datasets. Current evaluation spans ten datasets and three fixed seeds, with component studies and initial Jetson AGX Orin inference profiling.</p>
+            <h3>Neuromorphic Sensing for Edge Devices</h3>
+            <p class="project-subtitle">Accuracy and resource trade-offs in edge sensing</p>
+            <p>I develop spiking neural network (SNN) approaches for wireless and wearable sensing, with comparisons across ten datasets. Recent Jetson AGX Orin evaluation covers three datasets, three seeds, and 81 inference conditions, measuring accuracy, latency, throughput, and power.</p>
           </div></article>
           <article class="project-card"><div class="project-card-body">
             <div class="badge-row"><span class="badge">Ongoing</span><span class="badge">Manuscript in preparation</span></div>
-            <h3>ReActLens</h3>
+            <h3>LeaseTurn</h3>
             <p class="project-subtitle">Scheduling tool results for language-model agents</p>
-            <p>I prototype state-aware tool-result delivery and inference resumption, coordinating result ordering with cache residency and bounded cache protection. Recent real-engine experiments compare scheduling policies across complete tool-to-response workflows under concurrent result arrivals.</p>
+            <p>I investigate tool-result scheduling for language-model agents, focusing on inference latency and resource coordination. I built a real-inference prototype and controlled evaluation with 631 paired workflow comparisons to study scheduling behavior under varied workloads.</p>
             <p class="scope-note">Current work focuses on measured latency and resource behavior. Manuscript in preparation.</p>
           </div></article>
           <article class="project-card research-archive">
@@ -384,7 +385,7 @@
   <footer class="site-footer">
     <div class="shell">
       <p>© <span data-year></span> Yuxuan Hou</p>
-      <p>Last updated October 12, 2026 · Research, projects &amp; leadership.</p>
+      <p>Last updated October 14, 2026 · Research, projects &amp; leadership.</p>
       <a href="#top">Back to top ↑</a>
     </div>
   </footer>
