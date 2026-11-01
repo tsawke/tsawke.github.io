@@ -1733,6 +1733,23 @@ html[data-theme="dark"] .section-dark {
 
 .additional-research { margin-top: 32px; }
 
+/* Current manuscript uses the same featured treatment as Oto-Meal. */
+.lads-feature { margin-bottom: 48px; scroll-margin-top: calc(var(--header-height) + 28px); }
+.lads-feature .featured-content h3 { margin-top: 0; }
+.lads-feature .featured-visual { min-height: 0; }
+.lads-feature .featured-visual img { max-width: 560px; height: auto; margin-inline: auto; box-shadow: none; }
+.lads-feature .project-subtitle { font-size: 16px; line-height: 1.5; }
+.manuscript-status { margin-top: 20px; }
+.lads-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.lads-metrics strong { font-size: 18px; line-height: 1.4; }
+.additional-research > .project-card:first-child { grid-column: 1 / -1; }
+
+@media (max-width: 560px) {
+  .lads-metrics { grid-template-columns: 1fr; }
+  .lads-metrics div { display: block; }
+  .lads-metrics span { margin-top: 4px; }
+}
+
 /* Compact completed research alongside the current research tracks. */
 .research-archive {
   display: grid;

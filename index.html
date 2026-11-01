@@ -39,8 +39,8 @@
       </button>
 
       <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-        <a href="#publication">Publication</a>
         <a href="#research">Research</a>
+        <a href="#publication">Publication</a>
         <a href="#projects">Projects</a>
         <a href="#honors">Honors</a>
         <a href="#experience">Experience</a>
@@ -74,7 +74,7 @@
             <span>Agent systems</span>
             <span>Earable sensing</span>
           </div>
-          <p class="hero-publication">First-author paper accepted to <a href="#publication">WellComp 2026 (UbiComp/ISWC 2026 Workshop)</a>.</p>
+          <p class="hero-publication"><a href="#lads">LADS</a>: submitted to WWW 2027; arXiv submission completed. First-author Oto-Meal paper accepted to <a href="#publication">WellComp 2026 (UbiComp/ISWC 2026 Workshop)</a>.</p>
         </div>
 
         <aside class="profile-card">
@@ -117,8 +117,32 @@
           <div>
             <h2>Research</h2>
           </div>
-          <p>Selected work in learning on edge devices and acoustic scene reconstruction, alongside agent systems and earable sensing.</p>
+          <p>Featuring LADS, my current work on efficient language-model agents, alongside edge sensing, acoustic scene reconstruction, and earable sensing.</p>
         </div>
+
+        <article class="featured-research lads-feature" id="lads" aria-labelledby="lads-heading">
+          <figure class="featured-visual">
+            <img src="assets/img/lads-overview.svg" alt="Conceptual overview: concurrent tools return observations, LADS coordinates their delivery and cache reuse, and a shared inference service resumes agent workflows" width="560" height="560" loading="lazy">
+            <figcaption>Tool-result delivery and shared inference</figcaption>
+          </figure>
+          <div class="featured-content">
+            <h3 id="lads-heading">LADS</h3>
+            <p class="project-subtitle">Lease-Aware Delivery Scheduling of Tool Results for Language Model Agents</p>
+            <p class="manuscript-authors"><strong>Yuxuan Hou</strong> and Linshan Jiang · 2026</p>
+            <div class="badge-row manuscript-status" aria-label="LADS submission status">
+              <span class="badge badge-accent">Submitted to WWW 2027</span>
+              <span class="badge">arXiv submitted</span>
+            </div>
+            <p>I investigate how concurrent language-model agents share a constrained tool-result return path and reusable inference state. LADS coordinates result delivery with cache protection to reduce the time needed to complete multi-step agent workflows.</p>
+            <p>My work includes the scheduling system, a real-inference prototype, and controlled and Web-derived workload evaluation.</p>
+            <div class="research-metrics lads-metrics" aria-label="LADS mean complete-workflow latency reductions relative to FIFO delivery">
+              <div><strong>44.6% lower latency</strong><span>controlled bursty tool returns · 5 input seeds</span></div>
+              <div><strong>42.4% lower latency</strong><span>Web-derived burst replay · 3 input seeds</span></div>
+            </div>
+            <p class="metric-context">Mean complete-workflow latency relative to ReAct with first-in, first-out (FIFO) tool-result delivery in the reported burst workloads, using the same model and agent policy.</p>
+            <p class="status-note">Submitted to The Web Conference (WWW) 2027. The arXiv submission is awaiting announcement and a public identifier.</p>
+          </div>
+        </article>
 
         <article class="publication-card" id="publication" aria-labelledby="publication-heading">
           <h3 id="publication-heading">Oto-Meal: Earable Sensing with PPG and IMU for Personalized Meal Awareness</h3>
@@ -154,7 +178,7 @@
               <div><strong>85.13 ± 0.57%</strong><span>memory matching · 60% calibration</span></div>
             </div>
               <p class="metric-context">Workshop study: window-level event accuracy on a seven-user dataset. Pooled neural recognition and within-user memory matching are evaluated under separate mixed-user and within-user protocols.</p>
-              <p>Follow-up research explores data-efficient recognition and transfer learning, including a completed 32-case pilot on cross-user evaluation.</p>
+              <p>Follow-up research evaluates transfer from public earable data to self-collected PPG and accelerometer recordings, with held-out-user testing and separate protocols for personalized calibration.</p>
 
             <ul class="clean-list">
               <li><strong>7 users</strong>, 538 raw recordings, and 7,028 generated windows.</li>
@@ -192,14 +216,7 @@
             <div class="badge-row"><span class="badge">Ongoing</span><span class="badge">Manuscript in preparation</span></div>
             <h3>Neuromorphic Sensing for Edge Devices</h3>
             <p class="project-subtitle">Accuracy and resource trade-offs in edge sensing</p>
-            <p>I develop spiking neural network (SNN) approaches for wireless and wearable sensing, with comparisons across ten datasets. Recent Jetson AGX Orin evaluation covers three datasets, three seeds, and 81 inference conditions, measuring accuracy, latency, throughput, and power.</p>
-          </div></article>
-          <article class="project-card"><div class="project-card-body">
-            <div class="badge-row"><span class="badge">Ongoing</span><span class="badge">Manuscript in preparation</span></div>
-            <h3>LeaseTurn</h3>
-            <p class="project-subtitle">Scheduling tool results for language-model agents</p>
-            <p>I investigate tool-result scheduling for language-model agents, focusing on inference latency and resource coordination. I built a real-inference prototype and controlled evaluation with 631 paired workflow comparisons to study scheduling behavior under varied workloads.</p>
-            <p class="scope-note">Current work focuses on measured latency and resource behavior. Manuscript in preparation.</p>
+            <p>I study how spike encoding choices affect wireless and wearable sensing, with controlled comparisons spanning wireless, inertial, muscle, and tactile signals. Current work combines cross-modal experiments with Jetson AGX Orin measurements to examine accuracy, latency, and inference-pipeline overhead.</p>
           </div></article>
           <article class="project-card research-archive">
             <figure class="project-image spectral">
@@ -385,7 +402,7 @@
   <footer class="site-footer">
     <div class="shell">
       <p>© <span data-year></span> Yuxuan Hou</p>
-      <p>Last updated October 15, 2026 · Research, projects &amp; leadership.</p>
+      <p>Last updated November 2, 2026 · Research, projects &amp; leadership.</p>
       <a href="#top">Back to top ↑</a>
     </div>
   </footer>
