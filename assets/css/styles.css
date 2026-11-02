@@ -1714,15 +1714,6 @@ html[data-theme="dark"] .section-dark {
 }
 
 /* Publication and updated profile content */
-.publication-card {
-  margin-bottom: 32px;
-  padding: clamp(24px, 4vw, 40px);
-  border: 1px solid var(--accent);
-  border-radius: 20px;
-  background: var(--accent-soft);
-}
-.publication-card h3 { margin: 14px 0; font-size: clamp(20px, 2.4vw, 28px); line-height: 1.35; }
-.publication-card > p { margin-top: 14px; }
 .publication-links { display: flex; flex-wrap: wrap; gap: 14px 28px; margin-top: 22px; }
 .publication-links a { overflow-wrap: anywhere; }
 .publication-followup { color: var(--muted); font-size: 13px; }
@@ -1733,18 +1724,44 @@ html[data-theme="dark"] .section-dark {
 
 .additional-research { margin-top: 32px; }
 
-/* Current manuscript uses the same featured treatment as Oto-Meal. */
+/* Paper overviews span the card so dense original figures stay readable. */
 .lads-feature { margin-bottom: 48px; scroll-margin-top: calc(var(--header-height) + 28px); }
-.lads-feature .featured-content h3 { margin-top: 0; }
-.lads-feature .featured-visual { min-height: 0; }
-.lads-feature .featured-visual img { max-width: 560px; height: auto; margin-inline: auto; box-shadow: none; }
-.lads-feature .project-subtitle { font-size: 16px; line-height: 1.5; }
+.paper-feature { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.paper-heading { grid-column: 1 / -1; padding: clamp(26px, 4vw, 48px); }
+.paper-heading h3 { margin: 0; color: var(--ink-strong); font-family: Georgia, "Times New Roman", serif; font-size: clamp(30px, 3.4vw, 46px); font-weight: 500; letter-spacing: -0.025em; line-height: 1.15; }
+.paper-heading .project-subtitle { font-size: 16px; line-height: 1.5; }
+.paper-heading .manuscript-authors { margin-top: 16px; color: var(--muted); font-size: 14px; }
+.paper-heading .badge-row { margin-top: 18px; }
+.paper-venue { margin-top: 18px; color: var(--muted); font-size: 14px; }
+.paper-main-figure { grid-column: 1 / -1; }
+.paper-figure { min-width: 0; padding: clamp(14px, 2.8vw, 32px); background: #fff; }
+.paper-figure img { width: 100%; max-width: 1040px; height: auto; margin-inline: auto; }
+.paper-figure figcaption { max-width: 1040px; margin: 16px auto 0; color: #53646d; font-size: 12px; line-height: 1.6; }
+.paper-figure figcaption strong { color: #102a43; }
+.paper-figure figcaption span { display: block; }
+.figure-link { display: block; cursor: zoom-in; }
+.figure-link:hover { opacity: 0.9; }
+.paper-gallery { display: grid; align-content: center; gap: 24px; min-width: 0; padding: clamp(14px, 2.8vw, 32px); background: var(--bg-soft); }
+.paper-gallery .paper-figure { padding: 16px; }
+.paper-feature .featured-content > p:first-child { margin-top: 0; }
+.paper-feature .project-date { margin-top: 0; }
+.oto-feature { scroll-margin-top: calc(var(--header-height) + 28px); }
 .manuscript-status { margin-top: 20px; }
 .lads-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .lads-metrics strong { font-size: 18px; line-height: 1.4; }
 .additional-research > .project-card:first-child { grid-column: 1 / -1; }
 
+@media (max-width: 1040px) {
+  .paper-feature { grid-template-columns: minmax(0, 1fr); }
+  .paper-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .lads-feature .paper-gallery { grid-template-columns: minmax(0, 1fr); }
+  .lads-feature .paper-gallery .paper-figure { width: 100%; max-width: 620px; margin-inline: auto; }
+}
+
 @media (max-width: 560px) {
+  .paper-gallery { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .paper-gallery .paper-figure { padding: 12px; }
+  .paper-heading .publication-links a { margin: 0; }
   .lads-metrics { grid-template-columns: 1fr; }
   .lads-metrics div { display: block; }
   .lads-metrics span { margin-top: 4px; }

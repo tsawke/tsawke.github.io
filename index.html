@@ -120,12 +120,8 @@
           <p>Featuring LADS, my current work on efficient language-model agents, alongside edge sensing, acoustic scene reconstruction, and earable sensing.</p>
         </div>
 
-        <article class="featured-research lads-feature" id="lads" aria-labelledby="lads-heading">
-          <figure class="featured-visual">
-            <img src="assets/img/lads-overview.svg" alt="Conceptual overview: concurrent tools return observations, LADS coordinates their delivery and cache reuse, and a shared inference service resumes agent workflows" width="560" height="560" loading="lazy">
-            <figcaption>Tool-result delivery and shared inference</figcaption>
-          </figure>
-          <div class="featured-content">
+        <article class="featured-research paper-feature lads-feature" id="lads" aria-labelledby="lads-heading">
+          <header class="paper-heading">
             <h3 id="lads-heading">LADS</h3>
             <p class="project-subtitle">Lease-Aware Delivery Scheduling of Tool Results for Language Model Agents</p>
             <p class="manuscript-authors"><strong>Yuxuan Hou</strong> and Linshan Jiang · 2026</p>
@@ -133,6 +129,22 @@
               <span class="badge badge-accent">Submitted to WWW 2027</span>
               <span class="badge">arXiv submitted</span>
             </div>
+          </header>
+          <figure class="paper-figure paper-main-figure">
+            <a class="figure-link" href="assets/img/lads-figure1.svg" target="_blank" rel="noopener" aria-label="View LADS Figure 1 at full size">
+              <img src="assets/img/lads-figure1.svg" alt="LADS paper Figure 1: sender-side scheduling overview, inference-engine prefix leases, and an example of protection quota returning after an agent resumes" width="1200" height="704" loading="lazy">
+            </a>
+            <figcaption><strong>Figure 1 · Scheduling overview and quota turnover.</strong> <span>Open the figure to view at full size.</span></figcaption>
+          </figure>
+          <div class="paper-gallery">
+            <figure class="paper-figure">
+              <a class="figure-link" href="assets/img/lads-figure6.svg" target="_blank" rel="noopener" aria-label="View LADS Figure 6 at full size">
+                <img src="assets/img/lads-figure6.svg" alt="LADS paper Figure 6 compares FIFO and LADS mean continuation latency across queueing, transfer, receipt-to-allocation, and inference stages" width="241" height="164" loading="lazy">
+              </a>
+              <figcaption><strong>Figure 6 · Continuation latency on captured Web-agent workflows.</strong> Mean stage times across three matched arrival seeds, with 188 continuations per run (gzip6, 48 kbit/s).</figcaption>
+            </figure>
+          </div>
+          <div class="featured-content">
             <p>I investigate how concurrent language-model agents share a constrained tool-result return path and reusable inference state. LADS coordinates result delivery with cache protection to reduce the time needed to complete multi-step agent workflows.</p>
             <p>My work includes the scheduling system, a real-inference prototype, and controlled and Web-derived workload evaluation.</p>
             <div class="research-metrics lads-metrics" aria-label="LADS mean complete-workflow latency reductions relative to FIFO delivery">
@@ -144,33 +156,46 @@
           </div>
         </article>
 
-        <article class="publication-card" id="publication" aria-labelledby="publication-heading">
-          <h3 id="publication-heading">Oto-Meal: Earable Sensing with PPG and IMU for Personalized Meal Awareness</h3>
-          <p><strong>Yuxuan Hou</strong>, Jiao Li, Linshan Jiang, and Jin Zhang.</p>
-          <p><strong>WellComp 2026 (UbiComp/ISWC 2026 Workshop)</strong> — Computing for Well-being. Accepted; forthcoming in <em>UbiComp Companion ’26</em>.</p>
-          <div class="publication-links">
-            <a class="text-link" href="https://doi.org/10.1145/3798063.3841767" target="_blank" rel="noopener">DOI: 10.1145/3798063.3841767 ↗</a>
-            <a class="text-link" href="https://arxiv.org/abs/2608.16678" target="_blank" rel="noopener">Preprint · arXiv:2608.16678 ↗</a>
-          </div>
-        </article>
-
-        <article class="featured-research">
-          <figure class="featured-visual">
-            <img src="assets/img/oto-meal-overview.png" alt="Oto-Meal overview showing an earable PPG and IMU sensing pipeline, personalized calibration, inference, and accuracy results" loading="lazy">
-            <figcaption>System overview · calibration results</figcaption>
-          </figure>
-          <div class="featured-content">
+        <article class="featured-research paper-feature oto-feature" id="publication" aria-labelledby="publication-heading">
+          <header class="paper-heading">
+            <h3 id="publication-heading">Oto-Meal: Earable Sensing with PPG and IMU for Personalized Meal Awareness</h3>
+            <p class="project-subtitle">Personalized meal awareness without audio or images</p>
+            <p class="manuscript-authors"><strong>Yuxuan Hou</strong>, Jiao Li, Linshan Jiang, and Jin Zhang.</p>
             <div class="badge-row">
               <span class="badge badge-accent">Earable sensing</span>
               <span class="badge">Workshop paper &amp; ongoing research</span>
             </div>
+            <p class="paper-venue">First-author paper accepted to <strong>WellComp 2026 (UbiComp/ISWC 2026 Workshop)</strong> — Computing for Well-being. Forthcoming in <em>UbiComp Companion ’26</em>.</p>
+            <div class="publication-links">
+              <a class="text-link" href="https://doi.org/10.1145/3798063.3841767" target="_blank" rel="noopener">DOI: 10.1145/3798063.3841767 ↗</a>
+              <a class="text-link" href="https://arxiv.org/abs/2608.16678" target="_blank" rel="noopener">Preprint · arXiv:2608.16678 ↗</a>
+            </div>
+          </header>
+          <figure class="paper-figure paper-main-figure">
+            <a class="figure-link" href="assets/img/oto-meal-overview.png?v=20261102" target="_blank" rel="noopener" aria-label="View Oto-Meal Figure 1 at full size">
+              <img src="assets/img/oto-meal-overview.png?v=20261102" alt="Oto-Meal paper Figure 1 separates the pooled neural recognition protocol from the within-user memory-matching protocol and their respective results" width="1707" height="921" loading="lazy">
+            </a>
+            <figcaption><strong>Figure 1 · System overview.</strong> Pooled neural recognition and within-user memory matching are evaluated separately. <span>Open the figure to view at full size.</span></figcaption>
+          </figure>
+          <div class="paper-gallery">
+            <figure class="paper-figure">
+              <a class="figure-link" href="assets/img/oto-meal-class-recall.png" target="_blank" rel="noopener" aria-label="View Oto-Meal Figure 3 at full size">
+                <img src="assets/img/oto-meal-class-recall.png" alt="Oto-Meal paper Figure 3 shows per-class recall for chewing, drinking, coughing, swallowing, talking, and rest under personalized PPG and IMU memory matching" width="1433" height="751" loading="lazy">
+              </a>
+              <figcaption><strong>Figure 3 · Per-class recall.</strong> Personalized PPG+IMU memory-matching evaluation.</figcaption>
+            </figure>
+            <figure class="paper-figure">
+              <a class="figure-link" href="assets/img/oto-meal-per-user.png" target="_blank" rel="noopener" aria-label="View Oto-Meal Figure 4 at full size">
+                <img src="assets/img/oto-meal-per-user.png" alt="Oto-Meal paper Figure 4 shows personalized-memory cascade accuracy for seven anonymized users" width="1390" height="751" loading="lazy">
+              </a>
+              <figcaption><strong>Figure 4 · Per-user cascade accuracy.</strong> Results for seven anonymized users under personalized memory matching.</figcaption>
+            </figure>
+          </div>
+          <div class="featured-content">
             <p class="project-date">Sep 2025 — Present</p>
-            <h3>Oto-Meal: Earable Sensing with PPG and IMU for Personalized Meal Awareness</h3>
-            <p class="project-subtitle">Personalized meal awareness without audio or images</p>
             <p>I lead an earable sensing project using photoplethysmography (PPG) and an inertial measurement unit (IMU) to recognize chewing, drinking, coughing, swallowing, talking, and rest. I developed signal-processing and evaluation pipelines, a two-stage neural recognizer, and a lightweight memory matcher evaluated separately for within-user personalization.</p>
 
             <div class="role-line"><span>Role</span><strong>Project Lead &amp; Primary Developer</strong></div>
-              <p>First-author paper accepted to <strong>WellComp 2026 (UbiComp/ISWC 2026 Workshop)</strong>.</p>
 
             <div class="research-metrics" aria-label="Oto-Meal evaluation highlights">
               <div><strong>70.99%</strong><span>pooled event accuracy</span></div>

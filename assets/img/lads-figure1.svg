@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="7in" height="4.106667in" viewBox="0 0 1200 704" role="img" aria-labelledby="figure-title figure-description">
+<title id="figure-title">LADS scheduling overview and illustrative quota turnover</title>
+<desc id="figure-description">Panel a retains Cache-first, bounded turnover priority, transport commitment, native allocation and engine-side FIFO leases. Panel b compares the same B and C cached blocks before and after B resumes. A separate logical-quota rail shows B's exclusive protection quota returning and possibly funding a FIFO lease on C's own resident prefix. B's native request must own all leased blocks and successfully allocate at least one new token before its extra lease references retire. B continues using the same physical blocks. C remains subject to lease-grant conditions. A, B and C identify tool results and associated model histories, defined in the caption.</desc>
+<style>text { font-family: "Arial", Arial, sans-serif; font-kerning: normal; } .shape { vector-effect: non-scaling-stroke; }</style>
+<rect x="0" y="0" width="1200" height="704" rx="0" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0"/>
+<g id="panel-a-general-scheduling">
+<text x="16" y="30" fill="#15334F" font-size="27" font-weight="700" text-anchor="start">(a) Scheduling overview</text>
+<g id="feasible-ready-results">
+<rect x="16" y="64" width="154" height="234" rx="8" fill="#FFFFFF" stroke="#B3C0CB" stroke-width="1.5"/>
+<text x="93" y="94" fill="#15334F" font-size="22" font-weight="700" text-anchor="middle">Ready results</text>
+<g id="agent-1">
+<rect x="31" y="135" width="37" height="24" rx="6" fill="#EDF4FB" stroke="#15334F" stroke-width="1.7"/>
+<circle cx="42" cy="145" r="2" fill="#15334F" stroke="#15334F" stroke-width="0.5"/>
+<circle cx="57" cy="145" r="2" fill="#15334F" stroke="#15334F" stroke-width="0.5"/>
+<polyline points="44,153 55,153" fill="none" stroke="#15334F" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="49.5,135 49.5,128" fill="none" stroke="#15334F" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="49.5" cy="127" r="2" fill="#007F82" stroke="#007F82" stroke-width="0.7"/>
+</g>
+<text x="91" y="139" fill="#15334F" font-size="20" font-weight="700" text-anchor="middle">A</text>
+<polyline points="74,153 105,153" fill="none" stroke="#627589" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="105,153 100.0,155.5 100.0,150.5" fill="#627589" stroke="#627589" stroke-width="0.6" stroke-linejoin="round"/>
+<g id="ready-result-1" aria-label="Tool result ">
+<polygon points="115,127 136,127 145,136 145,165 115,165" fill="#EDF4FB" stroke="#15334F" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="136,127 136,136 145,136" fill="none" stroke="#15334F" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="123,144 137,144" fill="none" stroke="#15334F" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="123,150 137,150" fill="none" stroke="#15334F" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="123,156 132,156" fill="none" stroke="#15334F" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g id="agent-2">
+<rect x="31" y="188" width="37" height="24" rx="6" fill="#EDF4FB" stroke="#15334F" stroke-width="1.7"/>
+<circle cx="42" cy="198" r="2" fill="#15334F" stroke="#15334F" stroke-width="0.5"/>
+<circle cx="57" cy="198" r="2" fill="#15334F" stroke="#15334F" stroke-width="0.5"/>
+<polyline points="44,206 55,206" fill="none" stroke="#15334F" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="49.5,188 49.5,181" fill="none" stroke="#15334F" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="49.5" cy="180" r="2" fill="#007F82" stroke="#007F82" stroke-width="0.7"/>
+</g>
+<text x="91" y="192" fill="#15334F" font-size="20" font-weight="700" text-anchor="middle">B</text>
+<polyline points="74,206 105,206" fill="none" stroke="#627589" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="105,206 100.0,208.5 100.0,203.5" fill="#627589" stroke="#627589" stroke-width="0.6" stroke-linejoin="round"/>
+<g id="ready-result-2" aria-label="Tool result ">
+<polygon points="115,180 136,180 145,189 145,218 115,218" fill="#EDF4FB" stroke="#15334F" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="136,180 136,189 145,189" fill="none" stroke="#15334F" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="123,197 137,197" fill="none" stroke="#15334F" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="123,203 137,203" fill="none" stroke="#15334F" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="123,209 132,209" fill="none" stroke="#15334F" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g id="agent-3">
+<rect x="31" y="241" width="37" height="24" rx="6" fill="#EDF4FB" stroke="#15334F" stroke-width="1.7"/>
+<circle cx="42" cy="251" r="2" fill="#15334F" stroke="#15334F" stroke-width="0.5"/>
+<circle cx="57" cy="251" r="2" fill="#15334F" stroke="#15334F" stroke-width="0.5"/>
+<polyline points="44,259 55,259" fill="none" stroke="#15334F" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="49.5,241 49.5,234" fill="none" stroke="#15334F" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="49.5" cy="233" r="2" fill="#007F82" stroke="#007F82" stroke-width="0.7"/>
+</g>
+<text x="91" y="245" fill="#15334F" font-size="20" font-weight="700" text-anchor="middle">C</text>
+<polyline points="74,259 105,259" fill="none" stroke="#627589" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="105,259 100.0,261.5 100.0,256.5" fill="#627589" stroke="#627589" stroke-width="0.6" stroke-linejoin="round"/>
+<g id="ready-result-3" aria-label="Tool result ">
+<polygon points="115,233 136,233 145,242 145,271 115,271" fill="#EDF4FB" stroke="#15334F" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="136,233 136,242 145,242" fill="none" stroke="#15334F" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="123,250 137,250" fill="none" stroke="#15334F" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="123,256 137,256" fill="none" stroke="#15334F" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="123,262 132,262" fill="none" stroke="#15334F" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+</g>
+<g id="lads-sender">
+<rect x="192" y="64" width="632" height="234" rx="8" fill="#FFFFFF" stroke="#007F82" stroke-width="1.8"/>
+<text x="508" y="94" fill="#15334F" font-size="25" font-weight="700" text-anchor="middle">LADS sender</text>
+<g id="cache-first-with-cache-and-size-icons">
+<rect x="212" y="114" width="190" height="146" rx="6" fill="#EDF4FB" stroke="#B3C0CB" stroke-width="1.2"/>
+<text x="307" y="143" fill="#15334F" font-size="23" font-weight="700" text-anchor="middle">Cache-first</text>
+<rect x="230" y="164" width="8" height="8" rx="1.3" fill="#DFF3F1" stroke="#007F82" stroke-width="1"/>
+<rect x="240" y="164" width="8" height="8" rx="1.3" fill="#DFF3F1" stroke="#007F82" stroke-width="1"/>
+<rect x="230" y="174" width="8" height="8" rx="1.3" fill="#DFF3F1" stroke="#007F82" stroke-width="1"/>
+<rect x="240" y="174" width="8" height="8" rx="1.3" fill="#DFF3F1" stroke="#007F82" stroke-width="1"/>
+<circle cx="250" cy="181" r="6" fill="#FFFFFF" stroke="#007F82" stroke-width="1"/>
+<polyline points="247,181 249,183 253,178" fill="none" stroke="#007F82" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="263" y="182" fill="#15334F" font-size="20" font-weight="400" text-anchor="start">Valid hit first</text>
+<rect x="241" y="214" width="13" height="24" rx="1.7" fill="#EDF4FB" stroke="#627589" stroke-width="1"/>
+<polyline points="244,220 251,220" fill="none" stroke="#627589" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="244,225 251,225" fill="none" stroke="#627589" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="244,230 251,230" fill="none" stroke="#627589" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="230" y="220" width="13" height="18" rx="1.7" fill="#DFF3F1" stroke="#007F82" stroke-width="1.3"/>
+<polyline points="233,226 240,226" fill="none" stroke="#007F82" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="233,231 238,231" fill="none" stroke="#007F82" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="263" y="220" fill="#15334F" font-size="20" font-weight="400" text-anchor="start">Then smaller</text>
+<text x="263" y="243" fill="#15334F" font-size="20" font-weight="400" text-anchor="start">payload</text>
+</g>
+<g id="turnover-conditions-with-microvisuals">
+<rect x="428" y="114" width="300" height="146" rx="6" fill="#DFF3F1" stroke="#007F82" stroke-width="1.5"/>
+<text x="578" y="143" fill="#15334F" font-size="24" font-weight="700" text-anchor="middle">Quota turnover priority</text>
+<rect x="442" y="156" width="23" height="12" rx="3" fill="#FFFFFF" stroke="#007F82" stroke-width="1"/>
+<rect x="445" y="159" width="4" height="6" rx="0.5" fill="#007F82" stroke="#007F82" stroke-width="0.3"/>
+<rect x="450" y="159" width="4" height="6" rx="0.5" fill="#007F82" stroke="#007F82" stroke-width="0.3"/>
+<rect x="455" y="159" width="4" height="6" rx="0.5" fill="#007F82" stroke="#007F82" stroke-width="0.3"/>
+<text x="471" y="167" fill="#15334F" font-size="20" font-weight="400" text-anchor="start">Under pressure</text>
+<polyline points="448,182 448,178 451,176 456,176 459,178 459,182" fill="none" stroke="#007F82" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="445" y="182" width="17" height="13" rx="2" fill="#FFFFFF" stroke="#007F82" stroke-width="1.2"/>
+<circle cx="453.5" cy="187" r="1.4" fill="#007F82" stroke="#007F82" stroke-width="0.4"/>
+<polyline points="453.5,188 453.5,191" fill="none" stroke="#007F82" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="471" y="191" fill="#15334F" font-size="20" font-weight="400" text-anchor="start">Valid lease; E &gt; 0</text>
+<circle cx="453" cy="210" r="8" fill="#FFFFFF" stroke="#627589" stroke-width="1.6"/>
+<polyline points="453,207 453,210 459,213" fill="none" stroke="#627589" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="471" y="215" fill="#15334F" font-size="20" font-weight="400" text-anchor="start">Expected handoff by expiry</text>
+<rect x="439" y="228" width="278" height="27" rx="3" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0"/>
+<circle cx="451" cy="242" r="3" fill="#DFF3F1" stroke="#007F82" stroke-width="1"/>
+<circle cx="459" cy="242" r="3" fill="#DFF3F1" stroke="#007F82" stroke-width="1"/>
+<circle cx="467" cy="242" r="3" fill="#DFF3F1" stroke="#007F82" stroke-width="1"/>
+<polyline points="473,248 478,236" fill="none" stroke="#007F82" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="488" cy="242" r="7" fill="#FFFFFF" stroke="#627589" stroke-width="1.6"/>
+<polyline points="488,240 488,242 494,245" fill="none" stroke="#627589" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="630" y="248" fill="#007F82" font-size="20" font-weight="700" text-anchor="middle">Highest E / T</text>
+</g>
+<g id="commit-one-result">
+<text x="776" y="143" fill="#15334F" font-size="21" font-weight="700" text-anchor="middle">Commit</text>
+<g id="chosen-result" aria-label="Tool result ">
+<polygon points="753,167 790,167 799,176 799,224 753,224" fill="#DFF3F1" stroke="#007F82" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="790,167 790,176 799,176" fill="none" stroke="#007F82" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="761,184 791,184" fill="none" stroke="#007F82" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="761,190 791,190" fill="none" stroke="#007F82" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="761,196 786,196" fill="none" stroke="#007F82" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+</g>
+<polyline points="170,195.5 212,195.5" fill="none" stroke="#15334F" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="212,195.5 206.0,198.5 206.0,192.5" fill="#15334F" stroke="#15334F" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="402,195.5 428,195.5" fill="none" stroke="#15334F" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="428,195.5 422.0,198.5 422.0,192.5" fill="#15334F" stroke="#15334F" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="728,195.5 746,195.5" fill="none" stroke="#15334F" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="746,195.5 740.0,198.5 740.0,192.5" fill="#15334F" stroke="#15334F" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="508" y="284" fill="#15334F" font-size="20" font-weight="400" text-anchor="middle">One override, then base</text>
+</g>
+<g id="engine-receipt-and-allocation-icons">
+<rect x="850" y="64" width="334" height="234" rx="8" fill="#FFFFFF" stroke="#B3C0CB" stroke-width="1.3"/>
+<text x="1017" y="94" fill="#15334F" font-size="25" font-weight="700" text-anchor="middle">Inference engine</text>
+<rect x="870" y="114" width="294" height="60" rx="5" fill="#EDF4FB" stroke="#B3C0CB" stroke-width="1.1"/>
+<g id="fully-received-frame" aria-label="Tool result ">
+<polygon points="888,126 902,126 911,135 911,157 888,157" fill="#EDF4FB" stroke="#15334F" stroke-width="1.7" stroke-linejoin="round"/>
+<polyline points="902,126 902,135 911,135" fill="none" stroke="#15334F" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="896,143 903,143" fill="none" stroke="#15334F" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="896,149 903,149" fill="none" stroke="#15334F" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="896,155 898,155" fill="none" stroke="#15334F" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<text x="1044" y="139" fill="#15334F" font-size="22" font-weight="700" text-anchor="middle">Full receipt</text>
+<text x="1044" y="163" fill="#15334F" font-size="21" font-weight="400" text-anchor="middle">FIFO model entry</text>
+<polyline points="799,195.5 837,195.5 837,145 870,145" fill="none" stroke="#15334F" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="870,145 864.0,148.0 864.0,142.0" fill="#15334F" stroke="#15334F" stroke-width="0.6" stroke-linejoin="round"/>
+<polyline points="1017,176 1017,195" fill="none" stroke="#627589" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1017,195 1014.0,189.0 1020.0,189.0" fill="#627589" stroke="#627589" stroke-width="0.6" stroke-linejoin="round"/>
+<rect x="870" y="198" width="294" height="67" rx="5" fill="#EDF4FB" stroke="#B3C0CB" stroke-width="1.1"/>
+<rect x="884" y="218" width="8" height="8" rx="1" fill="#EDF4FB" stroke="#15334F" stroke-width="1"/>
+<rect x="894" y="218" width="8" height="8" rx="1" fill="#EDF4FB" stroke="#15334F" stroke-width="1"/>
+<rect x="884" y="228" width="8" height="8" rx="1" fill="#EDF4FB" stroke="#15334F" stroke-width="1"/>
+<rect x="894" y="228" width="8" height="8" rx="1" fill="#EDF4FB" stroke="#15334F" stroke-width="1"/>
+<text x="910" y="234" fill="#007F82" font-size="20" font-weight="400" text-anchor="middle">+</text>
+<rect x="918" y="223" width="13" height="16" rx="2" fill="#DFF3F1" stroke="#007F82" stroke-width="1.3"/>
+<text x="1044" y="224" fill="#15334F" font-size="22" font-weight="700" text-anchor="middle">Native allocation</text>
+<text x="1044" y="251" fill="#15334F" font-size="20" font-weight="400" text-anchor="middle">≥1 new token</text>
+</g>
+<polyline points="1017,267 1017,326" fill="none" stroke="#007F82" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="1017,326 1014.0,320.0 1020.0,320.0" fill="#007F82" stroke="#007F82" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="1103" y="319" fill="#007F82" font-size="20" font-weight="400" text-anchor="middle">Verify ownership</text>
+<g id="engine-side-prefix-leases">
+<rect x="192" y="328" width="992" height="54" rx="6" fill="#DFF3F1" stroke="#007F82" stroke-width="1.4"/>
+<text x="457" y="350" fill="#15334F" font-size="23" font-weight="700" text-anchor="middle">Engine-side FIFO prefix leases</text>
+<text x="457" y="373" fill="#15334F" font-size="20" font-weight="400" text-anchor="middle">Demand-based budget, fixed lifetime</text>
+<rect x="767" y="344" width="99" height="22" rx="11" fill="#FFFFFF" stroke="#007F82" stroke-width="1.1"/>
+<circle cx="783" cy="355" r="5" fill="#DFF3F1" stroke="#007F82" stroke-width="1"/>
+<circle cx="805" cy="355" r="5" fill="#DFF3F1" stroke="#007F82" stroke-width="1"/>
+<circle cx="827" cy="355" r="5" fill="#DFF3F1" stroke="#007F82" stroke-width="1"/>
+<circle cx="849" cy="355" r="5" fill="#DFF3F1" stroke="#007F82" stroke-width="1"/>
+<circle cx="905" cy="355" r="13" fill="#FFFFFF" stroke="#627589" stroke-width="1.6"/>
+<polyline points="905,347 905,355 911,358" fill="none" stroke="#627589" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+<g id="owner-feedback-to-sender">
+<polyline points="307,328 307,300" fill="none" stroke="#007F82" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="307,300 310.0,306.0 304.0,306.0" fill="#007F82" stroke="#007F82" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="438" y="319" fill="#007F82" font-size="20" font-weight="400" text-anchor="middle">Ownership record</text>
+</g>
+</g>
+<g id="panel-b-cache-snapshots-quota-flow">
+<polyline points="16,393 1184,393" fill="none" stroke="#B3C0CB" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="16" y="425" fill="#15334F" font-size="27" font-weight="700" text-anchor="start">(b) Example</text>
+<rect x="16" y="446" width="474" height="166" rx="10" fill="#F6F9FC" stroke="#B3C0CB" stroke-width="1.3"/>
+<text x="253" y="475" fill="#15334F" font-size="23" font-weight="700" text-anchor="middle">B waits</text>
+<polyline points="34,487 472,487" fill="none" stroke="#B3C0CB" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="44" y="528" fill="#007F82" font-size="26" font-weight="700" text-anchor="start">B</text>
+<rect x="92" y="504" width="30" height="30" rx="3" fill="#DFF3F1" stroke="#007F82" stroke-width="1.5"/>
+<polyline points="97,527 117,527" fill="none" stroke="#007F82" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="130" y="504" width="30" height="30" rx="3" fill="#DFF3F1" stroke="#007F82" stroke-width="1.5"/>
+<polyline points="135,527 155,527" fill="none" stroke="#007F82" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="168" y="504" width="30" height="30" rx="3" fill="#DFF3F1" stroke="#007F82" stroke-width="1.5"/>
+<polyline points="173,527 193,527" fill="none" stroke="#007F82" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="206" y="504" width="30" height="30" rx="3" fill="#DFF3F1" stroke="#007F82" stroke-width="1.5"/>
+<polyline points="211,527 231,527" fill="none" stroke="#007F82" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="44" y="590" fill="#C78300" font-size="26" font-weight="700" text-anchor="start">C</text>
+<rect x="92" y="566" width="30" height="30" rx="3" fill="#FFF1CB" stroke="#C78300" stroke-width="1.5"/>
+<polyline points="97,589 117,589" fill="none" stroke="#C78300" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="130" y="566" width="30" height="30" rx="3" fill="#FFF1CB" stroke="#C78300" stroke-width="1.5"/>
+<polyline points="135,589 155,589" fill="none" stroke="#C78300" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="168" y="566" width="30" height="30" rx="3" fill="#FFF1CB" stroke="#C78300" stroke-width="1.5"/>
+<polyline points="173,589 193,589" fill="none" stroke="#C78300" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="206" y="566" width="30" height="30" rx="3" fill="#FFF1CB" stroke="#C78300" stroke-width="1.5"/>
+<polyline points="211,589 231,589" fill="none" stroke="#C78300" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="710" y="446" width="474" height="166" rx="10" fill="#F4FBFA" stroke="#007F82" stroke-width="1.3"/>
+<text x="947" y="475" fill="#15334F" font-size="23" font-weight="700" text-anchor="middle">After B resumes</text>
+<polyline points="728,487 1166,487" fill="none" stroke="#B3C0CB" stroke-width="0.8" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="738" y="528" fill="#007F82" font-size="26" font-weight="700" text-anchor="start">B</text>
+<rect x="786" y="504" width="30" height="30" rx="3" fill="#DFF3F1" stroke="#007F82" stroke-width="1.5"/>
+<polyline points="791,527 811,527" fill="none" stroke="#007F82" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="824" y="504" width="30" height="30" rx="3" fill="#DFF3F1" stroke="#007F82" stroke-width="1.5"/>
+<polyline points="829,527 849,527" fill="none" stroke="#007F82" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="862" y="504" width="30" height="30" rx="3" fill="#DFF3F1" stroke="#007F82" stroke-width="1.5"/>
+<polyline points="867,527 887,527" fill="none" stroke="#007F82" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="900" y="504" width="30" height="30" rx="3" fill="#DFF3F1" stroke="#007F82" stroke-width="1.5"/>
+<polyline points="905,527 925,527" fill="none" stroke="#007F82" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="738" y="590" fill="#C78300" font-size="26" font-weight="700" text-anchor="start">C</text>
+<rect x="786" y="566" width="30" height="30" rx="3" fill="#FFF1CB" stroke="#C78300" stroke-width="1.5"/>
+<polyline points="791,589 811,589" fill="none" stroke="#C78300" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="824" y="566" width="30" height="30" rx="3" fill="#FFF1CB" stroke="#C78300" stroke-width="1.5"/>
+<polyline points="829,589 849,589" fill="none" stroke="#C78300" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="862" y="566" width="30" height="30" rx="3" fill="#FFF1CB" stroke="#C78300" stroke-width="1.5"/>
+<polyline points="867,589 887,589" fill="none" stroke="#C78300" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="900" y="566" width="30" height="30" rx="3" fill="#FFF1CB" stroke="#C78300" stroke-width="1.5"/>
+<polyline points="905,589 925,589" fill="none" stroke="#C78300" stroke-width="1" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="275,517 275,509 278,505 286,505 289,509 289,517" fill="none" stroke="#007F82" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="271" y="517" width="22" height="17" rx="3" fill="#FFFFFF" stroke="#007F82" stroke-width="1.8"/>
+<circle cx="282" cy="524" r="1.5" fill="#007F82" stroke="#007F82" stroke-width="0.5"/>
+<polyline points="282,525 282,529" fill="none" stroke="#007F82" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="307" y="525" fill="#007F82" font-size="21" font-weight="700" text-anchor="start">Lease</text>
+<text x="274" y="589" fill="#627589" font-size="20" font-weight="400" text-anchor="start">Awaiting lease</text>
+<rect x="973" y="504" width="196" height="29" rx="14" fill="#DFF3F1" stroke="#007F82" stroke-width="1.2"/>
+<text x="1071.0" y="525" fill="#007F82" font-size="20" font-weight="700" text-anchor="middle">B's native request</text>
+<text x="786" y="554" fill="#007F82" font-size="20" font-weight="400" text-anchor="start">Same cached blocks</text>
+<polyline points="983,580 983,572 986,568 994,568 997,572 997,580" fill="none" stroke="#C78300" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="979" y="580" width="22" height="17" rx="3" fill="#FFFFFF" stroke="#C78300" stroke-width="1.8"/>
+<circle cx="990" cy="587" r="1.5" fill="#C78300" stroke="#C78300" stroke-width="0.5"/>
+<polyline points="990,588 990,592" fill="none" stroke="#C78300" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="1014" y="588" fill="#C78300" font-size="20" font-weight="700" text-anchor="start">Lease, if eligible</text>
+<circle cx="600" cy="497" r="17" fill="#DFF3F1" stroke="#007F82" stroke-width="1.6"/>
+<polyline points="592,497 598,503 609,490" fill="none" stroke="#007F82" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polyline points="505,526 695,526" fill="none" stroke="#007F82" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="695,526 688.0,529.5 688.0,522.5" fill="#007F82" stroke="#007F82" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="600" y="557" fill="#007F82" font-size="20" font-weight="400" text-anchor="middle">All leased blocks held</text>
+<text x="600" y="583" fill="#007F82" font-size="20" font-weight="400" text-anchor="middle">+ ≥1 token allocated</text>
+<text x="16" y="646" fill="#15334F" font-size="20" font-weight="700" text-anchor="start">Exclusive quota</text>
+<rect x="185" y="659" width="136" height="28" rx="14" fill="#FFFFFF" stroke="#007F82" stroke-width="1.5"/>
+<circle cx="205" cy="673" r="8" fill="#DFF3F1" stroke="#007F82" stroke-width="1.2"/>
+<circle cx="237" cy="673" r="8" fill="#DFF3F1" stroke="#007F82" stroke-width="1.2"/>
+<circle cx="269" cy="673" r="8" fill="#DFF3F1" stroke="#007F82" stroke-width="1.2"/>
+<circle cx="301" cy="673" r="8" fill="#DFF3F1" stroke="#007F82" stroke-width="1.2"/>
+<text x="253" y="654" fill="#007F82" font-size="20" font-weight="400" text-anchor="middle">B's lease</text>
+<rect x="879" y="659" width="136" height="28" rx="14" fill="#FFFFFF" stroke="#C78300" stroke-width="1.5"/>
+<circle cx="899" cy="673" r="8" fill="#FFF1CB" stroke="#C78300" stroke-width="1.2"/>
+<circle cx="931" cy="673" r="8" fill="#FFF1CB" stroke="#C78300" stroke-width="1.2"/>
+<circle cx="963" cy="673" r="8" fill="#FFF1CB" stroke="#C78300" stroke-width="1.2"/>
+<circle cx="995" cy="673" r="8" fill="#FFF1CB" stroke="#C78300" stroke-width="1.2"/>
+<text x="947" y="654" fill="#C78300" font-size="20" font-weight="400" text-anchor="middle">C's lease</text>
+<polyline points="329,673 541,673" fill="none" stroke="#007F82" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="541,673 534.0,676.5 534.0,669.5" fill="#007F82" stroke="#007F82" stroke-width="0.6" stroke-linejoin="round"/>
+<rect x="548" y="658" width="104" height="29" rx="14" fill="#FFFFFF" stroke="#627589" stroke-width="1.2"/>
+<text x="600.0" y="679" fill="#627589" font-size="20" font-weight="700" text-anchor="middle">Return</text>
+<polyline points="659,673 871,673" fill="none" stroke="#C78300" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="871,673 864.0,676.5 864.0,669.5" fill="#C78300" stroke="#C78300" stroke-width="0.6" stroke-linejoin="round"/>
+<text x="760" y="655" fill="#C78300" font-size="20" font-weight="400" text-anchor="middle">FIFO grant</text>
+</g>
+</svg>
