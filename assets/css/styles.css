@@ -1727,22 +1727,24 @@ html[data-theme="dark"] .section-dark {
 /* Paper overviews span the card so dense original figures stay readable. */
 .lads-feature { margin-bottom: 48px; scroll-margin-top: calc(var(--header-height) + 28px); }
 .paper-feature { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
-.paper-heading { grid-column: 1 / -1; padding: clamp(26px, 4vw, 48px); }
+.paper-heading { grid-column: 1 / -1; padding: clamp(26px, 4vw, 48px); padding-bottom: 32px; }
 .paper-heading h3 { margin: 0; color: var(--ink-strong); font-family: Georgia, "Times New Roman", serif; font-size: clamp(30px, 3.4vw, 46px); font-weight: 500; letter-spacing: -0.025em; line-height: 1.15; }
 .paper-heading .project-subtitle { font-size: 16px; line-height: 1.5; }
 .paper-heading .manuscript-authors { margin-top: 16px; color: var(--muted); font-size: 14px; }
 .paper-heading .badge-row { margin-top: 18px; }
 .paper-venue { margin-top: 18px; color: var(--muted); font-size: 14px; }
-.paper-main-figure { grid-column: 1 / -1; }
-.paper-figure { min-width: 0; padding: clamp(14px, 2.8vw, 32px); background: #fff; }
-.paper-figure img { width: 100%; max-width: 1040px; height: auto; margin-inline: auto; }
-.paper-figure figcaption { max-width: 1040px; margin: 16px auto 0; color: #53646d; font-size: 12px; line-height: 1.6; }
-.paper-figure figcaption strong { color: #102a43; }
+.paper-figure { min-width: 0; padding: 0; background: transparent; }
+.paper-main-figure { grid-column: 1 / -1; padding: 0 clamp(26px, 4vw, 48px) 32px; }
+.paper-figure img { width: 100%; height: auto; margin-inline: auto; }
+.paper-figure figcaption { margin: 14px auto 0; color: var(--muted); font-size: 12px; line-height: 1.65; }
+.paper-figure figcaption strong { color: var(--ink-strong); }
 .paper-figure figcaption span { display: block; }
-.figure-link { display: block; cursor: zoom-in; }
-.figure-link:hover { opacity: 0.9; }
-.paper-gallery { display: grid; align-content: center; gap: 24px; min-width: 0; padding: clamp(14px, 2.8vw, 32px); background: var(--bg-soft); }
-.paper-gallery .paper-figure { padding: 16px; }
+.figure-link { display: block; padding: clamp(12px, 1.6vw, 20px); overflow: hidden; border-radius: 16px; background: #fff; cursor: zoom-in; }
+.paper-main-figure .figure-link,
+.paper-main-figure figcaption { width: 100%; max-width: 920px; margin-inline: auto; }
+.paper-gallery { display: grid; align-content: start; gap: 28px; min-width: 0; padding: 12px 24px 40px clamp(26px, 4vw, 48px); background: transparent; }
+.paper-gallery .paper-figure { padding: 0; }
+.paper-feature .featured-content { padding: 12px clamp(26px, 4vw, 48px) 40px 24px; }
 .paper-feature .featured-content > p:first-child { margin-top: 0; }
 .paper-feature .project-date { margin-top: 0; }
 .oto-feature { scroll-margin-top: calc(var(--header-height) + 28px); }
@@ -1753,14 +1755,19 @@ html[data-theme="dark"] .section-dark {
 
 @media (max-width: 1040px) {
   .paper-feature { grid-template-columns: minmax(0, 1fr); }
-  .paper-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .paper-gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 0 clamp(26px, 4vw, 48px) 32px; }
+  .paper-feature .featured-content { padding: 0 clamp(26px, 4vw, 48px) 40px; }
   .lads-feature .paper-gallery { grid-template-columns: minmax(0, 1fr); }
   .lads-feature .paper-gallery .paper-figure { width: 100%; max-width: 620px; margin-inline: auto; }
 }
 
 @media (max-width: 560px) {
-  .paper-gallery { grid-template-columns: minmax(0, 1fr); gap: 16px; }
-  .paper-gallery .paper-figure { padding: 12px; }
+  .paper-heading { padding: 26px 20px 24px; }
+  .paper-main-figure { padding: 0 20px 28px; }
+  .figure-link { padding: 10px; border-radius: 12px; }
+  .paper-gallery { grid-template-columns: minmax(0, 1fr); gap: 24px; padding: 0 20px 28px; }
+  .paper-gallery .paper-figure { padding: 0; }
+  .paper-feature .featured-content { padding: 0 20px 30px; }
   .paper-heading .publication-links a { margin: 0; }
   .lads-metrics { grid-template-columns: 1fr; }
   .lads-metrics div { display: block; }
