@@ -1752,6 +1752,7 @@ html[data-theme="dark"] .section-dark {
 .lads-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .lads-metrics strong { font-size: 18px; line-height: 1.4; }
 .additional-research > .project-card:first-child { grid-column: 1 / -1; }
+.additional-research > .research-brief { grid-column: 1 / -1; }
 
 @media (max-width: 1040px) {
   .paper-feature { grid-template-columns: minmax(0, 1fr); }
