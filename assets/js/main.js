@@ -84,7 +84,7 @@
   updateScrollState();
   window.addEventListener('scroll', updateScrollState, { passive: true });
 
-  const sections = Array.from(document.querySelectorAll('main section[id], #publication'));
+  const sections = Array.from(document.querySelectorAll('main > section[id]'));
   if ('IntersectionObserver' in window && sections.length) {
     const sectionObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {

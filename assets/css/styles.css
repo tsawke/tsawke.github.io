@@ -1727,7 +1727,10 @@ html[data-theme="dark"] .section-dark {
 .additional-research { margin-top: 32px; }
 
 /* Paper overviews span the card so dense original figures stay readable. */
-.lads-feature { margin-bottom: 48px; scroll-margin-top: calc(var(--header-height) + 28px); }
+.lads-feature { margin-bottom: 0; scroll-margin-top: calc(var(--header-height) + 28px); }
+.neuromorphic-group { margin-block: 48px; scroll-margin-top: calc(var(--header-height) + 28px); }
+.neuromorphic-group > .project-grid { margin-top: 24px; }
+#snn-stem, #spike-encoding, #publications { scroll-margin-top: calc(var(--header-height) + 28px); }
 .paper-feature { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
 .paper-heading { grid-column: 1 / -1; padding: clamp(26px, 4vw, 48px); padding-bottom: 32px; }
 .paper-heading h3 { margin: 0; color: var(--ink-strong); font-family: Georgia, "Times New Roman", serif; font-size: clamp(30px, 3.4vw, 46px); font-weight: 500; letter-spacing: -0.025em; line-height: 1.15; }
