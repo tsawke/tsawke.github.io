@@ -741,6 +741,7 @@ html[data-theme="dark"] .featured-visual {
 .featured-content h3,
 .research-row h3,
 .project-card h3,
+.project-card h4,
 .experience-panel .panel-title {
   color: var(--ink-strong);
   font-family: Georgia, "Times New Roman", serif;
@@ -890,7 +891,8 @@ html[data-theme="dark"] .featured-visual {
 }
 
 .research-row h3,
-.project-card h3 {
+.project-card h3,
+.project-card h4 {
   margin-top: 20px;
   font-size: 33px;
   line-height: 1.08;
